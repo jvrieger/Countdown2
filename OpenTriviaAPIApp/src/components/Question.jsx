@@ -1,8 +1,10 @@
+import "../styles/Question.css"
+
 export default function Question({ questionData, index }) {
     return (
-        <>
-            <h3>Question {index}</h3>
-            <p>{questionData.question}</p>
-        </>
+        <div className="questionSection">
+            <h3 className="questionHeading">Question {index}</h3>
+            <p className="question">{questionData.question}</p>
+        </div>
     );
 }
